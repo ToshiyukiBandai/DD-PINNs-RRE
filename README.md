@@ -33,7 +33,7 @@ This directory contains Matlab codes to solve the RRE using a finite difference 
 ## analytical solution
 The directory "analytical solutions" contain the analytical solutions to the RRE by Srivastava and Yeh (1991). The analytical solutions are saves as .npy files to be used later to verify DD-PINNs-RRE. The Jupyter notebooks are also available to obtain the analytical solutions for different hydraulic parameters. For heterogeneous soils, the procedures to obtain the analytical solutions depend on hydraulic parameters. Please refer to the Jupyter notebook and the original paper for detail.
 
-"""
+```
 @article{Srivastava1991,
 author = {Srivastava, R. and Yeh, T. C. J.},
 doi = {10.1029/90WR02772},
@@ -44,7 +44,7 @@ title = {{Analytical solutions for one-dimensional, transient infiltration towar
 volume = {27},
 year = {1991}
 }
-"""
+```
 
 This directory contains numerical solutions by  [HYDRUS-1D](https://www.pc-progress.com/en/Default.aspx?hydrus-1d) used for inverse modeling to estimate surface water flux (true solution and noisy data). The HYDRUS output files are located in "results/inverse/HYDRUS".
 
@@ -90,9 +90,9 @@ The sub-directory "example-inverse" contains results of a PINN simulation obtain
 ## Citing DD-PINNs-RRE
 To cite this repository:
 
-"""
+```
 Bibtex
-"""
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
