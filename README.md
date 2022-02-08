@@ -1,6 +1,6 @@
 # DD-PINNs-RRE: Physics-informed neural networks with Domain Decomposition for solving the Richardson-Richards equation
 
-This repository contains Python source codes for physics-informed neural networks (PINNs) with domain decomposition (DD) for solving the Richardson-Richards equation (RRE), which can be used to simulate water flow in soils. Also, this repository contains the analytical solutions to verify the PINN solutions as well as finite difference (written in Matlab) and finite element methods (using HYDRUS-1D) for the comparison. The results are summarized in a paper that is currently reviewed by xxx.
+This repository contains Python source codes for physics-informed neural networks (PINNs) with domain decomposition (DD) for solving the Richardson-Richards equation (RRE), which can be used to simulate water flow in soils. Also, this repository contains the analytical solutions to verify the PINN solutions as well as finite difference (written in Matlab) and finite element methods (using HYDRUS-1D) for comparison. The results are summarized in a paper that is currently reviewed by xxx.
 
 ### Contents
 * [PINNs_codes](#PINNs_codes)
@@ -11,7 +11,7 @@ This repository contains Python source codes for physics-informed neural network
 * [License](#License)
 
 ## PINNs_codes
-The directory "PINNs_codes" contains Jupyter notebooks to run DD-PINNs-RRE as well as data files in "data" sub-directory for three cases (two forward modelings and one inverse modeling). DD-PINNs-RRE is written in Python with Tensorflow 1.15. Although you can run the Jupyter notebooks in your local machine, the easiest way to run the the Jupyter notebooks in the repository on [Google Colab](https://colab.research.google.com/). Select "File" and then choose the notebooks in your PC by clicking "Open notebook". Because the default Tensorflow on Google Colab is Tensorflow 2, you need to uninstall it and install Tensorflow 1.15 by running the codes below:
+The directory "PINNs_codes" contains Jupyter notebooks to run DD-PINNs-RRE as well as data files in the "data" sub-directory for three cases (two forward modelings and one inverse modeling). DD-PINNs-RRE is written in Python with Tensorflow 1.15. Although you can run the Jupyter notebooks in your local machine, the easiest way to run the Jupyter notebooks in the repository on [Google Colab](https://colab.research.google.com/). First, select "File" and then choose the notebooks on your PC by clicking "Open notebook." Because the default Tensorflow on Google Colab is Tensorflow 2, you need to uninstall it and install Tensorflow 1.15 by running the codes below:
 
 ```python
 %tensorflow_version 2.x
@@ -31,7 +31,7 @@ You need to place the directories for the analytical solution and the data for t
 This directory contains Matlab codes to solve the RRE using a finite difference method for a homogeneous soil.
 
 ## analytical solution
-The directory "analytical solutions" contain the analytical solutions to the RRE by Srivastava and Yeh (1991). The analytical solutions are saves as .npy files to be used later to verify DD-PINNs-RRE. The Jupyter notebooks are also available to obtain the analytical solutions for different hydraulic parameters. For heterogeneous soils, the procedures to obtain the analytical solutions depend on hydraulic parameters. Please refer to the Jupyter notebook and the original paper for detail.
+The directory "analytical solutions" contain the analytical solutions to the RRE by Srivastava and Yeh (1991). The analytical solutions are saved as .npy files to be used later to verify DD-PINNs-RRE. The Jupyter notebooks are also available to obtain the analytical solutions for different hydraulic parameters. For heterogeneous soils, the procedures to obtain the analytical solutions depend on hydraulic parameters. Please refer to the Jupyter notebook and the original paper for detail.
 
 ```
 @article{Srivastava1991,
@@ -46,7 +46,7 @@ year = {1991}
 }
 ```
 
-This directory contains numerical solutions by  [HYDRUS-1D](https://www.pc-progress.com/en/Default.aspx?hydrus-1d) used for inverse modeling to estimate surface water flux (true solution and noisy data). The HYDRUS output files are located in "results/inverse/HYDRUS".
+This directory contains numerical solutions by  [HYDRUS-1D](https://www.pc-progress.com/en/Default.aspx?hydrus-1d) used for inverse modeling to estimate surface water flux (true solution and noisy data). The HYDRUS output files are located in "results/inverse/HYDRUS."
 
 ## results
 This directory contains results shown in the paper.
@@ -58,7 +58,7 @@ The sub-directory "forward_homogeneous" contains results for the forward modelin
 * "training": PINNs simulations to demonstrate the evolution of loss terms and activation function parameters, whereby different IDs show simulations with different random seeds (ID=2 is shown in the paper)
 * "trainng_evolution": PINNs simulations to demonstrate how PINNs learn the solution
 * "adaptive_residual.xls": Results for the residual-based adaptive refinement algorithm
-* "adaptive_weights.xls": Results for the adaptive leaning rate algorithm
+* "adaptive_weights.xls": Results for the adaptive learning rate algorithm
 * "collocation_points.xls": Results for the effects of the number of residual points
 * "NN_architecture.csv": Results for the effects of the architecture of neural networks
 * "upper_boundary.xls": Results for the effects of the number of upper boundary data points
@@ -79,19 +79,19 @@ The sub-directory "inverse" contains results for the inverse modeling of a two-l
 * "VGM_noise": PINNs simulations with different measurement schemes and random seeds
 
 ### example-homogeneous
-The sub-directory "example-homogeneous" contains results of a PINN simulation obtained by running the Jupyter notebook for the homogeneous case.
+The sub-directory "example-homogeneous" contains the results of a PINN simulation obtained by running the Jupyter notebook for the homogeneous case.
 
 ### example-heterogeneous
-The sub-directory "example-heterogeneous" contains results of a PINN simulation obtained by running the Jupyter notebook for the heterogeneous case.
+The sub-directory "example-heterogeneous" contains the results of a PINN simulation obtained by running the Jupyter notebook for the heterogeneous case.
 
 ### example-inverse
-The sub-directory "example-inverse" contains results of a PINN simulation obtained by running the Jupyter notebook for the inverse modeling.
+The sub-directory "example-inverse" contains the results of a PINN simulation obtained by running the Jupyter notebook for the inverse modeling.
 
 ## Citing DD-PINNs-RRE
 To cite the paper:
 
 ```
-hopefully coming!
+Hopefully coming!
 ```
 
 To cite this repository:
