@@ -88,6 +88,12 @@ The sub-directory "example-heterogeneous" contains results of a PINN simulation 
 The sub-directory "example-inverse" contains results of a PINN simulation obtained by running the Jupyter notebook for the inverse modeling.
 
 ## Citing DD-PINNs-RRE
+To cite the paper:
+
+```
+hopefully coming!
+```
+
 To cite this repository:
 
 ```
