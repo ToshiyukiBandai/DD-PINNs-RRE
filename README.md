@@ -3,11 +3,11 @@
 This repository contains Python source codes for physics-informed neural networks (PINNs) with domain decomposition (DD) for solving the Richardson-Richards equation (RRE), which can be used to simulate water flow in soils. Also, this repository contains the analytical solutions to verify the PINN solutions as well as finite difference (written in Matlab) and finite element methods (using HYDRUS-1D) for the comparison. The results are summarized in a paper that is currently reviewed by xxx.
 
 ### Contents
-* [xxx](#PINNs_codes)
-* [xxx](#FDM_codes)
-* [xxx](#analytical solution)
-* [xxx](#results)
-* [xxx](#Citing DD-PINNs-RRE)
+* [PINNs_codes](#PINNs_codes)
+* [FDM_codes](#FDM_codes)
+* [analytical solution](#analytical solution)
+* [results](#results)
+* [Citing DD-PINNs-RRE](#Citing DD-PINNs-RRE)
 
 ## PINNs_codes
 The directory "PINNs_codes" contains Jupyter notebooks to run DD-PINNs-RRE as well as data files in "data" sub-directory for three cases (two forward modelings and one inverse modeling). DD-PINNs-RRE is written in Python with Tensorflow 1.15. Although you can run the Jupyter notebooks in your local machine, the easiest way to run the the Jupyter notebooks in the repository on [Google Colab](https://colab.research.google.com/). Select "File" and then choose the notebooks in your PC by clicking "Open notebook". Because the default Tensorflow on Google Colab is Tensorflow 2, you need to uninstall it and install Tensorflow 1.15 by running the codes below:
@@ -49,7 +49,7 @@ This directory contains numerical solutions by  [HYDRUS-1D](https://www.pc-progr
 ## results
 This directory contains results shown in the paper.
 
-# forward_homogeneous
+### forward_homogeneous
 The sub-directory "forward_homogeneous" contains results for the forward modeling of a homogeneous soil (Section 3.1 in the paper).
 * "best_case": Example of a PINNs simulation
 * "FDM": Finite difference simulations
@@ -62,7 +62,7 @@ The sub-directory "forward_homogeneous" contains results for the forward modelin
 * "upper_boundary.xls": Results for the effects of the number of upper boundary data points
 * "weight_parameters.xls": Results for the effects of weight parameters in the loss function
 
-# forward_heterogeneous
+### forward_heterogeneous
 The sub-directory "forward_heterogeneous" contains results for the forward modeling of a two-layered heterogeneous soil (Section 3.2 in the paper).
 * "best_case": Example of a PINNs simulation
 * "HYDRUS": Output files of the HYDRUS-1D simulation with initial condition (psi_ini.csv) and lookup table (look_up.xlsx)  
@@ -71,15 +71,15 @@ The sub-directory "forward_heterogeneous" contains results for the forward model
 * "collocation_points.xls": Results for the effects of the number of interface points
 * "weight_parameters.xls": Results for the effects of weight parameters in the loss function
 
-# inverse
+### inverse
 The sub-directory "inverse" contains results for the inverse modeling of a two-layered heterogeneous soil (Section 4 in the paper).
 * "HYDRUS": Output files of the HYDRUS-1D simulation for the training data
 * "VGM_noise": PINNs simulations with different measurement schemes and random seeds
 
-# example-homogeneous
+### example-homogeneous
 The sub-directory "example-homogeneous" contains results of a PINN simulation obtained by running the Jupyter notebook for the homogeneous case.
 
-# example-heterogeneous
+### example-heterogeneous
 The sub-directory "example-heterogeneous" contains results of a PINN simulation obtained by running the Jupyter notebook for the heterogeneous case.
 
 ## Citing DD-PINNs-RRE
@@ -87,12 +87,6 @@ To cite this repository:
 """
 Bibtex
 """
-
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
