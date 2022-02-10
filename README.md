@@ -97,7 +97,13 @@ Hopefully coming!
 To cite this repository:
 
 ```
-[![DOI](https://zenodo.org/badge/457087065.svg)](https://zenodo.org/badge/latestdoi/457087065)
+@misc{Bandai2022,
+author = {Bandai, T. and Ghezzehei, T. A.},
+doi = {10.5281/zenodo.6030635},
+publisher = {Dataset on Zenodo},
+title = {{DD-PINNS-RRE}},
+year = {2022}
+}
 ```
 
 ## License
