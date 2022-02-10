@@ -97,7 +97,7 @@ Hopefully coming!
 To cite this repository:
 
 ```
-Bibtex
+[![DOI](https://zenodo.org/badge/457087065.svg)](https://zenodo.org/badge/latestdoi/457087065)
 ```
 
 ## License
