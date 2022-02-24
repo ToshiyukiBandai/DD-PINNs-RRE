@@ -1,6 +1,6 @@
 # DD-PINNs-RRE: Physics-informed neural networks with Domain Decomposition for solving the Richardson-Richards equation
 
-This repository contains Python source codes for physics-informed neural networks (PINNs) with domain decomposition (DD) for solving the Richardson-Richards equation (RRE), which can be used to simulate water flow in soils. Also, this repository contains the analytical solutions to verify the PINN solutions as well as finite difference (written in Matlab) and finite element methods (using HYDRUS-1D) for comparison. The results are summarized in a paper that is currently under reviewed.
+This repository contains Python source codes for physics-informed neural networks (PINNs) with domain decomposition (DD) for solving the Richardson-Richards equation (RRE), which can be used to simulate water flow in soils. Also, this repository contains the analytical solutions to verify the PINN solutions as well as finite difference (written in Matlab) and finite element methods (using HYDRUS-1D) for comparison. The results are summarized in a paper that is currently under reviewed. The preprint is available from [here](https://arxiv.org/abs/2202.11274).
 
 ### Contents
 * [PINNs_codes](#PINNs_codes)
