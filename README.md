@@ -91,7 +91,16 @@ The sub-directory "example-inverse" contains the results of a PINN simulation ob
 To cite the paper:
 
 ```
-Bandai, T. and Ghezzehei, T. A.: Forward and inverse modeling of water flow in unsaturated soils with discontinuous hydraulic conductivities using physics-informed neural networks with domain decomposition, Hydrol. Earth Syst. Sci. Discuss. [preprint], https://doi.org/10.5194/hess-2022-73, in review, 2022.
+@Article{hess-2022-73,
+AUTHOR = {Bandai, T. and Ghezzehei, T. A.},
+TITLE = {Forward and inverse modeling of water flow in unsaturated soils with discontinuous hydraulic conductivities using physics-informed neural networks with domain decomposition},
+JOURNAL = {Hydrology and Earth System Sciences Discussions},
+VOLUME = {2022},
+YEAR = {2022},
+PAGES = {1--42},
+URL = {https://hess.copernicus.org/preprints/hess-2022-73/},
+DOI = {10.5194/hess-2022-73}
+}
 ```
 
 To cite this repository:
